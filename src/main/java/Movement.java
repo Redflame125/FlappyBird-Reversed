@@ -45,8 +45,6 @@ public class Movement {
                 }
             }
 
-            System.out.println(lastY);
-
             int vertical = utils.calculateGravity(xPosition);
 
             if (lastY > 1000 && vertical <= 0) vertical = 0;
