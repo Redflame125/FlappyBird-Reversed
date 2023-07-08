@@ -1,0 +1,7 @@
+{
+  "host": "MCmoderSD.de",
+  "port": "3306",
+  "database": "FlappyBirdLeaderboard",
+  "user": "flappy",
+  "password": "0f972066321ac5e82f6fcc5157d3435402ce2ff57033f55ea977e36272c12f4890c9db9d973f99163132ff570c9b3603452ddee9c4f71a2c7dc856d7f04f4642"
+}

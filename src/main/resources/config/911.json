@@ -1,0 +1,20 @@
+{
+  "Title": "Flappy Bird",
+  "Background": "911/Skyline.png",
+  "Player": "911/Plane.png",
+  "Rainbow": "911/rainbowPlane.gif",
+  "ObstacleTop": "911/TowerTop.png",
+  "ObstacleBottom": "911/TowerBottom.png",
+  "Icon": "Images/Icon.png",
+  "GameOver": "Lena/GameOver.png",
+  "Pause": "Lena/GamePaused.png",
+  "dieSound": "sounds/mono/die.wav",
+  "flapSound": "sounds/mono/flap.wav",
+  "hitSound": "sounds/911/mono/AllahuAkbar.wav",
+  "pointSound": "sounds/mono/point.wav",
+  "rainbowSound": "sounds/mono/rainbow.wav",
+  "backgroundMusic": "sounds/911/stereo/nasheed.wav",
+  "WindowSizeX": 800,
+  "WindowSizeY": 800,
+  "Resizeable": false
+}

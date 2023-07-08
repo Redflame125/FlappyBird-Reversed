@@ -1,0 +1,20 @@
+{
+  "Title": "Flappy Bird",
+  "Background": "Images/Background.png",
+  "Player": "Lena/Bird.png",
+  "Rainbow": "Lena/rainbowBird.gif",
+  "ObstacleTop": "Lena/ObstacleTop.png",
+  "ObstacleBottom": "Lena/ObstacleBottom.png",
+  "Icon": "Images/Icon.png",
+  "GameOver": "Lena/GameOver.png",
+  "Pause": "Lena/GamePaused.png",
+  "dieSound": "sounds/mono/die.wav",
+  "flapSound": "sounds/mono/flap.wav",
+  "hitSound": "sounds/mono/hit.wav",
+  "pointSound": "sounds/mono/point.wav",
+  "rainbowSound": "sounds/mono/rainbow.wav",
+  "backgroundMusic": "",
+  "WindowSizeX": 800,
+  "WindowSizeY": 800,
+  "Resizeable": false
+}
