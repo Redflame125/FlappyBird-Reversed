@@ -70,7 +70,7 @@ public class Utils {
 
     // Läd Musikdateien und spielt sie ab
     public void audioPlayer(String audioFilePath, boolean sound, boolean loop) {
-        if (sound && !Logic.instance.gamePaused && !Objects.equals(audioFilePath, "error/emtpy.wav")) {
+        if (sound && !Logic.instance.gamePaused && !Objects.equals(audioFilePath, "error/empty.wav")) {
             if (!loop) audioIsStopped = false;
             CompletableFuture.runAsync(() -> {
                 try {
@@ -150,7 +150,7 @@ public class Utils {
         return bufferedImageCache.get(path).getWidth();
     }
 
-    // Zentrirt das Fenster mittig auf dem Bildschirm
+    // Zentriert das Fenster mittig auf dem Bildschirm
     public Point centerFrame(JFrame frame) {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); // Bildschirmgröße
         return new Point(((screenSize.width - frame.getWidth()) / 2), ((screenSize.height - frame.getHeight()) / 2));

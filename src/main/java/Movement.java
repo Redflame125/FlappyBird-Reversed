@@ -39,22 +39,30 @@ public class Movement {
 
             int lastY = 0;
 
+            for (JLabel component : GameUI.instance.obstacles) {
+                if (component != null && component.getIcon() != null) {
+                    if (lastY <= component.getY()) lastY = component.getY();
+                }
+            }
 
+            System.out.println(lastY);
 
+            int vertical = utils.calculateGravity(xPosition);
 
+            if (lastY > 1000 && vertical <= 0) vertical = 0;
 
             for (JLabel component : GameUI.instance.obstacles) {
                 if (component != null && component.getIcon() != null) {
-                    component.setLocation(component.getX(), component.getY() - utils.calculateGravity(xPosition));
+                    component.setLocation(component.getX(), component.getY() - vertical);
                 }
             }
 
             for (Rectangle rectangle : GameUI.instance.rObstacles) {
-                rectangle.setLocation(rectangle.x, rectangle.y - utils.calculateGravity(xPosition));
+                rectangle.setLocation(rectangle.x, rectangle.y - vertical);
             }
 
             for (Rectangle rectangle : GameUI.instance.greenZones) {
-                rectangle.setLocation(rectangle.x, rectangle.y - utils.calculateGravity(xPosition));
+                rectangle.setLocation(rectangle.x, rectangle.y - vertical);
             }
 
             playerMoveInt = 0;
